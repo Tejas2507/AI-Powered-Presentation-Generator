@@ -1,0 +1,12 @@
+pydantic 
+fastapi
+uvicorn[standard]
+python-pptx
+python-dotenv
+langchain
+langgraph
+langchain-community
+langchain-tavily
+langchain-google-genai
+tavily-python
+python-docx
