@@ -44,25 +44,7 @@ The application is built with a modern, decoupled architecture. The frontend com
 5.  **Slide Assembly (`python-pptx`):** The final node takes the structured content and uses the `python-pptx` library to programmatically build the PowerPoint presentation, applying the selected theme's colors and fonts.
 6.  **File Download:** The server saves the `.pptx` file and signals completion to the frontend, enabling the download button.
 
-<!-- end list -->
-
-```mermaid
-graph TD
-    A[Frontend UI] -->|1. POST Request (Topic, Theme)| B(FastAPI Backend);
-    B -->|2. Invoke LangGraph| C{AI Workflow};
-    C --> D[1. Expand Queries (LLM)];
-    D --> E[2. Web Search (Tavily)];
-    E --> F[3. Plan Slides (LLM)];
-    F --> G[4. Generate Content (LLM)];
-    G --> H[5. Create .pptx File (python-pptx)];
-    H -->|6. Save to 'outputs/'| I[Server Filesystem];
-    B -.->|7. Stream Progress & Final Path| A;
-    A -->|8. GET Request (Filename)| B;
-    B -->|9. Serve File| I;
-```
-
------
-
+----
 ## 🚀 Getting Started
 
 Follow these instructions to set up and run the project locally.
