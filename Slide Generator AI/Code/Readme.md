@@ -144,7 +144,6 @@ Follow these instructions to set up and run the project locally.
 │   └── __init__.py
 ├── outputs/              # Generated PowerPoint files are saved here.
 ├── .env                  # Stores API keys (you must create this).
-├── .gitignore            # Specifies files for Git to ignore.
 ├── index.html            # The main frontend file for the user interface.
 ├── main.py               # FastAPI application entry point and API endpoints.
 ├── requirements.txt      # Lists all Python dependencies for the project.
@@ -153,10 +152,4 @@ Follow these instructions to set up and run the project locally.
 
 -----
 
-## 🔮 Future Improvements
 
-  * **Image Generation:** Integrate a model like DALL-E or Imagen to automatically generate relevant images for each slide.
-  * **More Output Formats:** Add support for exporting to Google Slides or PDF.
-  * **Custom Theming:** Allow users to define their own color palettes and upload logos.
-  * **User Accounts:** Implement a user system to save and manage past presentations.
-  * **Expanded Content Control:** Allow users to specify the number of slides or provide more detailed instructions.
