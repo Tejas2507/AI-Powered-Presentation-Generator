@@ -4,7 +4,6 @@ You can copy and paste the following content directly into a new file named `REA
 
 -----
 
-\<br\>
 
 # 🤖 AI Presentation Generator
 
